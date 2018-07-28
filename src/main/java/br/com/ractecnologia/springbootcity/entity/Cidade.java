@@ -14,7 +14,7 @@ public class Cidade {
 
     private String nome;
 
-    private Uf uf;
+   // private Uf uf;
 
 
     public Cidade() {
@@ -36,11 +36,5 @@ public class Cidade {
         this.nome = nome;
     }
 
-    public Uf getUf() {
-        return uf;
-    }
 
-    public void setUf(Uf uf) {
-        this.uf = uf;
-    }
 }

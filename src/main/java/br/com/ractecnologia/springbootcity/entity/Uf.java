@@ -16,7 +16,7 @@ public class Uf {
 
     private String sigla;
 
-    private Pais pais;
+
 
 
     public Uf() {
@@ -46,21 +46,7 @@ public class Uf {
         this.sigla = sigla;
     }
 
-    public Pais getPais() {
-        return pais;
-    }
 
-    public void setPais(Pais pais) {
-        this.pais = pais;
-    }
 
-    @Override
-    public String toString() {
-        return "Uf{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", sigla='" + sigla + '\'' +
-                ", pais=" + pais +
-                '}';
-    }
+
 }

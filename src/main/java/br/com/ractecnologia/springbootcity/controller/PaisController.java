@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/pais")
 public class PaisController {
@@ -16,8 +18,8 @@ public class PaisController {
     private PaisRepository paisRepository;
 
     @GetMapping
-    public Pais findPais(){
-        return paisRepository.getOne(1L);
+    public List<Pais> findPais(){
+        return paisRepository.findAll();
 
     }
 }
